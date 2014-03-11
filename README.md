@@ -12,6 +12,11 @@ This uses the [x3dom](https://github.com/stubailo/meteor-x3dom) package from [At
 
 To run the app, first install [Meteorite](http://oortcloud.github.io/meteorite/), then run the app with the `mrt` command.
 
+- Clicking places a block
+- Right-clicking removes a block
+- Dragging rotates the view
+- Scrolling zooms in and out
+
 ### Screenshot
 
 ![image](http://i.imgur.com/Szt82H5.png)
