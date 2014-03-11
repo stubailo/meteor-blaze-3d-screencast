@@ -6,6 +6,8 @@ Meteor X3DOM integration demo
 
 When you use them together, you can easily create apps that have 3D features!
 
+This is a very simple demo. Check out the more complete app at [3d.meteor.com](http://3d.meteor.com/).
+
 ### Running the App
 
 This uses the [x3dom](https://github.com/stubailo/meteor-x3dom) package from [Atmosphere](https://atmosphere.meteor.com/).
