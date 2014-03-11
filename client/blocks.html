@@ -1,0 +1,36 @@
+<body>
+	<!-- color picker -->
+	<div class="controls">
+		{{#each colors}}
+			<div class="swatch {{#if active}}active{{/if}}"
+				style="background-color: {{this}}"></div>
+		{{/each}}
+	</div>
+
+  <x3d><scene>
+  	<!-- camera -->
+  	<navigationinfo type="turntable"></navigationinfo>
+  	<viewpoint position="8.19 12.33 19.5"
+  		orientation="-0.834 0.55 0 0.65"></viewpoint>
+
+  	<!-- ground -->
+  	<transform rotation="-1.5707 0 0 1.5707">
+	  	<shape>
+	  		<appearance><material diffuseColor="#4A9">
+	  			</material></appearance>
+		  	<plane size="20 20"></plane>
+			</shape>
+		</transform>
+
+		<!-- boxes -->
+  	{{#each boxes}}
+  		<transform translation="{{x}} {{y}} {{z}}">
+		    <shape id="{{_id}}">
+		    	<appearance><material diffuseColor="{{color}}"
+		        ambientIntensity="0.1"></material></appearance>
+		      <box size="1 1 1"></box>
+		    </shape>
+		  </transform>
+    {{/each}}
+	</scene></x3d>
+</body>
