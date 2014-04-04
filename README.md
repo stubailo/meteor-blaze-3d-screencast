@@ -1,4 +1,4 @@
-Meteor X3DOM integration demo
+Meteor 3D demo
 =================
 
 [X3DOM](http://www.x3dom.org/) is a way to represent 3D scenes in the DOM and
